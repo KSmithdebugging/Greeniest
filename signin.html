@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Sign in</title>
+	<link rel="stylesheet" type="text/css" href="signin.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Martel+Sans&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<script src="script.js"></script>
+</head>
+
+<body>
+     <!-- Importing main banner -->
+   	 <header style="background-color: #DDE8ED;">
+<h3 class="logo" ><a href="https://business-website-kemosmith.oak9black.repl.co/home.html" style="text-decoration: none;">GREENIEST</a></h3>
+  <nav>
+    <a href="about.html">About</a>
+    <a href="contact.html">Help & Contact</a>
+    <a href="index.html">Work with Us</a>
+    <a href="signin.html">My Greeniest</a>
+     <a href="#">Sell</a>
+      <a href="#">Search bar</a>
+</nav></header> 
+	<form action="/action_page.php">
+		<h3>Sign in</h3>
+		<div class="formcontainer">
+			<hr>
+				<div class="container">
+					<label for="uname"><strong>Username</strong></label>
+       <input type="text" placeholder="Enter Username" name="uname" required>
+        <label for="psw"><strong>Password</strong></label>
+        <input id="password" type="password" placeholder="Enter Password" name="psw" required>
+        <input type="checkbox" onclick="myFunction()">Show Password
+      </div>
+      <button onclick="location.href='home.html'" type="submit">Login</button>
+      <div class="container" style="background-color: #eee">
+        <p>By continuing, you agree to Greeniest's <a href="https://www.google.com/">Conditions of Use</a> and <a href="https://www.google.com/">Privacy Notice</a>.</p>
+        <label style="padding-left: 15px">
+        <input type="checkbox"  checked="checked" name="remember"> Remember me
+        </label>
+        <span class="psw"><a href="https://docs.google.com/forms/d/e/1FAIpQLSflVzKWjfpTgJMR5aQ0hJQNx6lebLb-s9ZPiTlViHp-h0kZ7w/viewform?usp=sf_link"> Forgot password?</a></span>
+        <h1 class="create-account"><a href="createaccount.html">Create your account</a></h1>
+      </div>
+      <ul class="bottom-nav-buttons">
+      <li class="bottom-nav-buttons"><a href="https://en.wikipedia.org/wiki/Terms_of_service">Conditions of Use</a></li>
+      <li class="bottom-nav-buttons"><a href="contact.html">Help</a></li>
+      <li class="bottom-nav-buttons"><a>Privacy Notice</a></li>
+      <li class="bottom-nav-buttons">©2021, Greeniest or its affliates</li>
+      </ul>
+    </form>
+  </section>
+    </body>
+</html>

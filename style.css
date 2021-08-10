@@ -1,0 +1,561 @@
+/* .banner-buttons {
+  color: #EA7000;
+  font-weight: 600;
+  font-family: "Martel Sans", sans-serif;
+  z-index: 1;
+  position: relative;
+  top: 17px;
+  bottom: 17px;
+  left: 17px;
+  right: 17px;
+  
+  
+} */
+/* Slideshow start */
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 99%;
+  position: relative;
+  padding-left: 8px;
+
+  
+}
+
+/* Slide description  */
+
+.slide-desc {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size: 21px;
+  color: white;
+
+}
+
+/* Caption text */
+
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+/* End of slideshow */
+
+header {
+    width: 100%;
+    margin: 0;
+
+    text-align: center;
+    background: #DDE8ED;
+    transition: 0.4s;
+}
+@font-face {
+  font-family: Moderne Sans;
+  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/moderne_sans.woff2)
+}
+
+* {
+    box-sizing: border-box;
+}
+user agent stylesheet
+header {
+    display: block;
+    color: white;
+}
+.logo {
+  font-family: Moderne Sans, sans-serif;
+  color: #4c8c5c;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 10px;
+}
+.logolink:visited {
+   color: #4c8c5c;
+} 
+h3 {
+    font-family: Moderne Sans, sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    width: 100%;
+    letter-spacing: 0.5rem;
+    display: block;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    color: #4c8c5c;
+}
+nav {
+    display: block;
+    text-align: center;
+}
+nav a {
+    text-decoration: none;
+    color: #4c8c5c;
+    padding: 1rem;
+ 
+   
+}
+h2 {
+ font-family: Century Schoolbook, Century Schoolbook L, Georgia, serif;
+  font-size: 8vmin;
+  text-align: center;
+  margin: 2rem 3rem 0;
+  mix-blend-mode: overlay;
+  color: #fff;
+  font-weight: 100;
+}
+
+
+.top-right {
+ position: absolute;
+  top: 8px;
+  right: 16px;
+} 
+body {
+  background-color:white;
+  margin: 0;
+}
+.main-content {
+ text-align: center;
+}
+.main-image-content {
+min-width: 50%;
+width: 100%;
+height: 500px;
+padding-top: 30px;
+overflow: hidden;
+/* position: absolute; */
+
+}
+
+.main-banner-buttons {
+  list-style-type: none;
+  display: inline-block;
+    color: #EA7000;
+  font-weight: 600;
+  font-family: "Martel Sans", sans-serif;
+}
+
+
+/* a:visited, a:hover, a:focus {
+    text-decoration: none;
+    color: #EA7000;
+}
+a:hover {
+  text-decoration: underline;
+} */
+.center {
+  display: block;
+  margin: 0 auto;
+}
+.sub-header {
+ width: 100%;
+ height: 200px;
+ background-color: #DDE8ED;
+margin-top: 8px;
+display: flex;
+}
+.sub-image-content {
+width: 20%;
+height: 200px;
+}
+.sub-text-content {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 35px;
+    display: inline-block;
+    list-style-type: none;
+   align-items: center;
+   margin: auto;
+   
+    color: #0057FF;
+
+}
+.extra-innovative {
+    width: 100%;
+}
+
+user agent stylesheet
+section {
+    display: block;
+}
+.row {
+    display: flex;
+    justify-content: space-evenly;
+}
+.box {
+    width: 30%;
+    height: auto;
+    display: inline-block;
+}
+.box-cover {
+    width: 100%;
+    height: 300px;
+
+}
+/* Text overlay on more of our products */
+.image-img {
+   position: relative;
+  width: 400px;
+}
+
+
+.image-hover {
+ width: 100%;
+ display: block;
+}
+.text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  display: flex;
+  font-family: 'Courier New', Courier, monospace;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+.text-overlay:hover {
+  opacity: 1;
+}
+/* End of text overlay */
+/* Work with us and button to get started */
+.work-with-us {
+background-color: #DDE8ED;
+width: 100%;
+height: 450px;
+margin-bottom: 50px;
+}
+.work-with-us-row {
+
+}
+.work-with-us-box {
+background-color: white;
+width: 20%;
+height: auto;
+display: table-cell; 
+  padding: 20px;
+  text-align: center;
+
+
+}
+/* Styling work with us icons */
+.work-withus-icons {
+  width: 25%;
+  height: auto;
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.get-started {
+  margin: 0 auto;
+  display: block;
+   border-radius: 40px;
+   background: #494ca2;
+    border-color: #494ca2;
+    color: #fff;
+    padding: 15px;
+    margin-top: 15px;
+}
+/* End of work with us container */
+
+/* Bottom nav bar container */
+.end-nav {
+  background: whitesmoke;
+  width: 100%;
+  height: 100px;
+
+}
+.bottom-image {
+  width: 5%;
+  height: auto;
+  display: inline-block;
+
+}
+/* Social media icons for bottom nav bar */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+/* End of social media bar */
+
+/* Bottom nav bar */
+.end-nav-buttons {
+  display: inline-block;
+ margin-right: 45px;
+
+}
+/* End of first page */
+
+/* Backup code incase the preset rules doesn't work for the form
+#fname {
+ font-family: 'Martel Sans', sans-serif;
+ position: relative;
+   top: 0px;
+   
+
+}
+#lname {
+ font-family: 'Martel Sans', sans-serif;
+ position: relative;
+   top: 0px;
+   
+ 
+}
+#country {
+    font-family: 'Martel Sans', sans-serif;
+  position: relative;
+   top: 0px;
+}
+#phone {
+  font-family: 'Martel Sans', sans-serif;
+  position: relative;
+   top: 0px;
+   
+}
+#email {
+ font-family: 'Martel Sans', sans-serif;
+  position: relative;
+   top: 0px;
+   
+}
+
+#issue {
+  font-family: 'Martel Sans', sans-serif;
+  position: relative;
+   top: 0px;
+    
+} */
+.submit-appearance {
+   font-family: 'Martel Sans', sans-serif;
+   display: inline-block;
+   position: relative;
+   top: 30px;
+
+}
+#describe-issue {
+  height: 100px;
+  font-size: 15px;
+}
+.submit-form {
+  position: relative;
+   top: 50px;
+   justify-content: center;
+   
+}
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], input[type=email], input[type=tel], input[type=textarea],select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid blue; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  background-color: #f4f5f7;
+  color: #333; 
+  justify-content: center;
+  position: relative;
+  top: 30px;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #f68c40;
+  color: white;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Roboto', serif;
+}
+
+/* When moving the mouse over the submit button, add a darker color */
+input[type=submit]:hover {
+  background-color: #DD7327;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  padding: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
+  width:100%;
+  height: 700px;
+  position: relative;
+}
+.container::before {
+ content: "";
+ background-image: url("images/weheretohelp.jpeg");
+opacity: 0.5;
+background-origin: border-box;
+background-size: 100% 100%;
+background-position: right;
+background-repeat: no-repeat;
+position: absolute;
+top: 0px;
+right: 0px;
+bottom: 0px;
+left: 0px;
+}
+/* Other ways of contact externally */
+.ways-of-contact {
+display: flex;
+    justify-content: space-evenly;
+    margin-top: 200px;
+    margin-bottom: 200px;
+
+}
+/* Style ways of contact row */
+.box {
+display: inline-block;
+}
+/* Container for the contact options */
+.choose-contact-options {
+  /* background: lightblue; */
+  border: none;
+  border-radius: 4px;
+  padding-bottom: 100px;
+  position: relative;
+  top: 255px;
+  left: 255px;
+  width: 50%;
+  height: 450px;
+}
+/* Choose either to call or submit a support form */
+.contact-options {
+display: inline-block;
+height:40px;
+line-height: 0px;
+min-width:40px;
+border-radius: 20px;
+padding-left: 20px;
+padding-right: 20px;
+background-color: #aab5c5;
+position: relative;
+left: 35%;
+color: white;
+font-family: 'Martel Sans', serif;
+text-decoration: none;
+
+}
+.help-text-contact {
+ font-family: 'Martel Sans',serif;
+ color: blue;
+ font-size: 32px;
+ font-weight: bold; 
+position: relative;
+  left: 42%;
+}
+.contact:hover {
+text-decoration: underline;
+}
+/* Whole form */
+.form {
+ 
+}
+/* internal anchor link to support form section */
+#fill-form {
+
+
+}
+
+/* Social media icons */
+.social-media {
+font-family: 'Martel Sans', serif;
+
+  width: 32%;
+  height: auto;
+
+}
+/* Contianer for our location */
+.location {
+
+}
+/* Location and location icon */
+.location-icon {
+  width: 250px;
+  font-family: 'Martel Sans', serif;
+}
+/* Container for our phone numbers */
+.call-phone {
+
+}
+/* Our phone number and icon */
+.call-phone-icon {
+font-family: 'Martel Sans', serif;
+width: 250px;
+}
+.nav-contact:link {
+color: black;
+text-decoration: none;
+}
+
+.nav-contact:visited {
+  color: black;
+}
+.nav-contact:hover {
+  text-decoration: underline;
+}
+/* Internal anchor link to calling our representatives */
+#phone {
+
+}
+#email {
+  
+}

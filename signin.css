@@ -1,0 +1,168 @@
+html, body {
+font-family: 'Poppins', sans-serif;
+font-size: 15px;
+background: linear-gradient(-135deg,#c850c0,#4158d0);
+margin: 0;
+}
+/* Importing the main banner and its buttons */
+  header {
+    width: 100%;
+  margin: 0;
+    padding-top: 5px;
+    text-align: center;
+    background: #DDE8ED;
+    transition: 0.4s;
+}
+@font-face {
+  font-family: Moderne Sans;
+  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/moderne_sans.woff2)
+}
+
+* {
+    box-sizing: border-box;
+}
+user agent stylesheet
+header {
+    display: block;
+    color: white;
+}
+.logo {
+  font-family: Moderne Sans, sans-serif;
+  color: #4c8c5c;
+} 
+h3 {
+    font-family: Moderne Sans, sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    width: 100%;
+    letter-spacing: 0.5rem;
+    display: block;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    color: #4c8c5c;
+}
+nav {
+    display: block;
+    text-align: center;
+}
+nav a {
+    text-decoration: none;
+    color: #4c8c5c;
+    padding: 1rem;
+ 
+   
+}
+h2 {
+ font-family: Century Schoolbook, Century Schoolbook L, Georgia, serif;
+  font-size: 8vmin;
+  text-align: center;
+  margin: 2rem 3rem 0;
+  mix-blend-mode: overlay;
+  color: #fff;
+  font-weight: 100;
+}
+/* End of importation */
+
+/* container for the whole login form */
+form {
+border-radius: 10px;
+background-color: #fff;
+padding-bottom: 20%;
+height: 60%;
+width: 80%;
+margin: auto;
+
+}
+label {
+  padding-bottom: 5px;
+}
+/* Enter username and password */
+input[type=text], input[type=password] {
+width: 100%;
+padding: 16px 8px;
+/* margin: 8px 0; */
+display: inline-block;
+border: 1px solid blue;
+box-sizing: border-box;
+font-weight: 600;
+border-radius: 25px;
+color: #666;
+}
+/* Added a background email icon */
+input[type=text] {
+    border-radius: 25px;
+    background: #e6e6e6 url('images/emailicon.png') no-repeat top left;
+  background-size: 3.5%;
+  background-origin: padding-box;
+  padding-left: 60px;
+  background-position: 10px 8px;
+  
+}
+/* Added a background password icon */
+input[type=password] {
+    background: #e6e6e6 url('images/passwordicon.png') no-repeat top left;
+  background-size: 3.5%;
+  background-origin: padding-box;
+  padding-left: 60px;
+  background-position: 10px 8px;
+}
+#password {
+
+}
+/* Sign in button */
+button {
+background-color: #3665f3;
+color: white;
+padding: 14px 0;
+margin: 10px 0;
+cursor: grabbing;
+width: 100%;
+border: 1px solid black;
+border-radius: 4px;
+}
+h3 {
+text-align:center;
+font-size:18;
+}
+.create-account {
+  font-size: 15px;
+  text-align: right;
+}
+/* Changes to a lighter color when you hover over it */
+button:hover {
+opacity: 0.8;
+}
+.formcontainer {
+text-align: left;
+margin: 12px 50px 12px;
+}
+/* Container at the bottom of form for remember me and forgot password */
+.container {
+padding: 1px 0;
+text-align:left;
+}
+span.psw {
+float: right;
+padding-top: 0;
+padding-right: 15px;
+}
+.bottom-nav-buttons {
+  display: inline-block;
+  list-style-type: none;
+  padding-right: 13px;
+  }
+/* Change styles for span on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+  display: block;
+  float: none;
+  }
+  .bottom-nav-buttons {
+  display: inline-block;
+  list-style-type: none;
+  }
+}
+/* End of first page or signing in */

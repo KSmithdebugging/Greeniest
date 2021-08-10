@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  font-family:'Alternate Gothic No2 D Regular', Fallback, sans-serif;
+  background-color: white;
+  background: url('images/treesbackground.jpeg') no-repeat;
+  background-size: 100% 100%;
+  backdrop-filter: blur(3.5px);
+}
+/* Nav bar */
+header {
+    width: 100%;
+    padding-top: 0;
+    text-align: center;
+    background: #DDE8ED;
+    transition: 0.4s;
+}
+@font-face {
+  font-family: Moderne Sans;
+  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/moderne_sans.woff2)
+}
+
+* {
+    box-sizing: border-box;
+}
+user agent stylesheet
+header {
+    display: block;
+    color: white;
+}
+.logo {
+  font-family: Moderne Sans, sans-serif;
+  color: #4c8c5c;
+  margin: 0;
+  padding: 20px;
+} 
+.logolink:visited {
+   color: #4c8c5c;
+} 
+h3 {
+    font-family: Moderne Sans, sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    width: 100%;
+    letter-spacing: 0.5rem;
+    display: block;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    color: #4c8c5c;
+}
+nav {
+    display: block;
+    text-align: center;
+}
+nav a {
+    text-decoration: none;
+    color: #4c8c5c;
+    padding: 1rem;
+    font-size: 22px;
+ 
+   
+}
+h2 {
+ font-family: Century Schoolbook, Century Schoolbook L, Georgia, serif;
+  font-size: 8vmin;
+  text-align: center;
+  margin: 2rem 3rem 0;
+  mix-blend-mode: overlay;
+  color: #fff;
+  font-weight: 100;
+}
+/* End of nav bar */
+
+/* Alternate Gothic No2 D Regular Font */
+@font-face {
+  font-family: "Alternate Gothic No2 D Regular";
+  src: url("/Fonts/Alternate Gothic No2 D Regular.ttf") format("woff2"),
+       url("/Fonts/Alternate Gothic No2 D Regular.ttf") format("woff");
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #DDE8ED;
+  color: #4c8c5c;
+}
+.card {
+  width: 50%;
+  margin: auto;
+}
+.p-container {
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  background-color: #DDE8ED;
+}
+p {
+  font-weight: 600;
+  color: black;
+  font-family: 'Helvetica Neue', sans-serif; 
+  font-size: 20px;
+   line-height: 24px;
+    margin: 0 0 24px;
+     text-align: justify;
+      text-justify: inter-word;
+}
+
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: white;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}

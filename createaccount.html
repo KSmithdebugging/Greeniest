@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Create Account</title>
+	<link rel="stylesheet" type="text/css" href="createaccount.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+	 crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<script src="script.js">
+
+	</script>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<!-- Importing the main banner with its buttons -->
+ 
+   <header style="background-image: url('https://colorlib.com/etc/lf/Login_v4/images/bg-01.jpg');">
+<h3 class="logo" ><a href="https://business-website-kemosmith.oak9black.repl.co/home.html" style="text-decoration: none;">GREENIEST</a></h3>
+  <nav>
+    <a href="about.html">About</a>
+    <a href="contact.html">Help & Contact</a>
+    <a href="index.html">Work with Us</a>
+    <a href="signin.html">My Greeniest</a>
+     <a href="#">Sell</a>
+      <a href="#">Search bar</a>
+     <!-- End of importation -->
+ <div class="main-block" style="margin-top: 50px;" >
+      <h1>Registration</h1>
+      <form action="/">
+        <hr>
+        <div class="account-type">
+          <input type="radio" value="none" id="radioOne" name="account" checked/>
+          <label for="radioOne" class="radio">Personal</label>
+          <input type="radio" value="none" id="radioTwo" name="account" />
+          <label for="radioTwo" class="radio">Company</label>
+        </div>
+        <hr>
+          <label id="icon" for="name"><i class="fas fa-user"></i></label>
+        <input type="text" name="name" id="fname" placeholder="First name" required/>
+        <label id="icon" for="name"><i class="fas fa-user"></i></label>
+        <input type="text" name="name" id="lname" placeholder="Last name" required/>
+        <label id="icon" for="name"><i class="fas fa-envelope"></i></label>
+        <input type="text" name="name" id="email" placeholder="Email" required/>
+        <label id="icon" for="name"><i class="fas fa-user"></i></label> <input type="date" id="birthday" name="birthday">
+         <label id="icon1" name="name" id="phonenum"><i class="fas fa-phone-alt"></i></label>
+         <input type="tel" id="phone" name="phone"
+       pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="Phone Number">
+        <label id="icon" for="name"><i class="fas fa-unlock-alt"></i></label>
+        <input type="password" name="name" id="pass" placeholder="Password" required/>
+        <label id="icon" for="name"><i class="fas fa-unlock-alt"></i></label>
+        <input class="showpass" type="password" name="name" id="verify-pass" placeholder="Confirm Password" required/>
+        <hr>
+        <input type="checkbox" onclick="revealPass()">   Show Password
+        <hr>
+          <input type="checkbox"  checked="checked" name="remember"> Remember me
+          <br>
+        <div class="gender">
+          <input type="radio" value="none" id="male" name="gender"/>
+          <label for="male" class="radio">Male</label>
+          <input type="radio" value="none" id="female" name="gender" />
+          <label for="female" class="radio">Female</label>
+          <label style="padding-left: 15px">
+            <label for="Other" class="radio">Other</label>
+            <input type="radio" value="none" id="other" name="gender"/>           
+          <label style="padding-left: 15px">
+          </label>
+          <select id="dropdown" class="form-control" >
+            <option value=" Cisgender">    Cisgender</option>  
+            <option value="Non-binary">    Non-binary</option>
+            <option value="Trans Female"> Trans Female</option>
+            <option value="Trans Male<">Trans Male</option>
+            <option value="Trans Woman">Trans Woman</option>
+            <option value="Transgender">   Transgender</option> 
+            <option value="Transgender Man">   Transgender Man</option>   
+            <option value="Transgender Woman">   Transgender Woman</option>
+            <option value="NA">Not Applicable</option>
+          </select>
+        </div>
+        <hr>
+        <div class="btn-block">
+           <button type="submit" href="/" value="Submit" id="submit" onclick="signin()"" >Submit</button>
+          <p>By clicking Register, you agree to Greeniest's <a href="https://www.google.com/">Conditions of Use</a> 
+          and <a href="https://www.google.com/">Privacy Notice</a>.</p>
+      <ul class="bottom-nav-buttons">
+      <li class="bottom-nav-buttons">
+        <a href="https://en.wikipedia.org/wiki/Terms_of_service">Conditions of Use</a>
+        </li>
+      <li class="bottom-nav-buttons"><a href="contact.html">Help</a>
+      </li>
+      <li class="bottom-nav-buttons"><a>Privacy Notice</a>
+      </li>
+      <li class="bottom-nav-buttons">©2021, Greeniest or its affliates</li>
+      </ul>
+      </div>
+      </form>
+      <script>
+    function revealPass() {
+    var showpass1 = document.getElementById("pass");
+    if (showpass1.type === "password") {
+    showpass1.type = "text";
+  } else {
+    showpass1.type = "password";
+  }
+}
+
+function signin() {
+ alert("You signed in successfully");
+ location.href = "home.html";
+}
+
+        </script>
+</body>
+
+
+</html>
