@@ -56,18 +56,18 @@ showSlides();
 // // }
 // Search bar
 // Execute a function when the user releases a key on the keyboard
-    var input = document.getElementById("myInput");
-    input.addEventListener("keyup", function(event) {
-      // Number 13 is the "Enter" key on the keyboard
-      if (event.keyCode === 13) {
-        // Cancel the default action, if needed
-        event.preventDefault();
-        alert('hello');
-        // Trigger the button element with a click
-         if (input.value == "apple")
-        if ()
-        document.getElementById("hidden-link").click();
+    // var input = document.getElementById("myInput");
+    // input.addEventListener("keyup", function(event) {
+    //   // Number 13 is the "Enter" key on the keyboard
+    //   if (event.keyCode === 13) {
+    //     // Cancel the default action, if needed
+    //     event.preventDefault();
+    //     alert('hello');
+    //     // Trigger the button element with a click
+    //      if (input.value == "apple")
+    //     if ()
+    //     document.getElementById("hidden-link").click();
    
         
-      }
-    });
+    //   }
+    // });
