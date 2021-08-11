@@ -29,7 +29,9 @@
       <!-- Search bar -->
       
     <input id="myInput" type="text" placeholder="Search.." name="search2">
-    <a id="hidden-link" href="#jacket"></a>
+    <a class="hiddenlink" id="hiddenlink" href="#hiddenlink"></a>
+    <a class="hiddenlink" id="blanket" href="#blanket"></a>
+    <a class="hiddenlink" id="cbd" href="#cbd"></a>
     <button type="submit"><i style="padding: 0;" class="fa fa-search"></i></button>
   
   <!-- End of Search bar -->
@@ -58,11 +60,11 @@
       <!-- <img class="manga-bg-img" src="https://images.unsplash.com/photo-1548827752-6301e20b3be0?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGFuaW1lfGVufDB8fDB8fA%3D%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60" alt=""> -->
      <div class="slideshow">
        <div class="container">
-      <img class="mySlides" src="images/leadinggreen.jpg" alt="Leading Green" style="height: 707px; width: auto;">
-      <button class="btn">Shop New Arrivals</button>
+      <img id="showbutton" class="mySlides" src="images/leadinggreen.jpg" alt="Leading Green" style="height: 707px; width: auto;">
+      <button class="btn" id="shopBtn">Shop New Arrivals</button>
       </div>
-  <img class="mySlides" src="https://images-na.ssl-images-amazon.com/images/G/01/digital/video/merch/TV/HKTG_S2_GWBleedingHero_3000x1200_POST_Final_en-US_DOT0071._CB666548407_.jpg">
-  <img class="mySlides" src="https://images-na.ssl-images-amazon.com/images/G/01/kindle/journeys/ZmVhMDM4ZmYt/ZmVhMDM4ZmYt-OWQ2NjJjNmMt-w3000._CB668936041_.jpg">
+  <img id="showanotherbutton" class="mySlides" src="https://images-na.ssl-images-amazon.com/images/G/01/digital/video/merch/TV/HKTG_S2_GWBleedingHero_3000x1200_POST_Final_en-US_DOT0071._CB666548407_.jpg">
+  <img id="showlastbutton" class="mySlides" src="https://images-na.ssl-images-amazon.com/images/G/01/kindle/journeys/ZmVhMDM4ZmYt/ZmVhMDM4ZmYt-OWQ2NjJjNmMt-w3000._CB668936041_.jpg">
   <button class="mainprev-nav" onclick="plusDivs(-1)">&#10094;</button>
   <button class="mainforward-nav" onclick="plusDivs(1)">&#10095;</button>
   </div>
@@ -104,7 +106,7 @@
            <p class="top-left">Stay comfy →</p>
             <img class="box-cover shop-categories-offer" src="https://www.sustainablejungle.com/wp-content/uploads/2020/10/Image-by-Coyuchi-2-683x1024.jpg" alt="Eco-Friendly Gloves">
         </div>
-          <div class="box shop-categories">
+          <div id="cbd" class="box shop-categories">
              <p class="top-left">CBD →</p>
               <img class="box-cover shop-categories-offer" src="images/ecofriendlycbd.png">
         </div>
@@ -120,12 +122,12 @@
           <p>The Cool and the Comfiest</p>
           <p><a href="#">See all ➜</a></p>
       <div class="row">
-        <div id="jacket" class="box">
+        <div id="hiddenlink" class="box">
             <a href="https://outdoorsmagic.com/article/best-eco-waterproof-jackets-2016/">
               <img class="box-cover" src="https://coresites-cdn-adm.imgix.net/outdoorsmagic/wp-content/uploads/2016/09/Eco-Jacket-1.0.jpg?fit=crop" alt="Jacket">
           </a>
         </div>
-        <div class="box">
+        <div id="blanket" class="box">
            <a href="https://www.sustainably-chic.com/blog/eco-friendly-sustainable-blankets"><img class="box-cover" src="https://images.squarespace-cdn.com/content/v1/547a3834e4b053a861c4874e/1625668834608-HBAIQ6R2WRMR3JDEUFCP/Sustainably+Chic+%7C+Sustainable+Fahion+and+Living+Blog+%7C+Organic+and+Eco+Friendly+Blankets.jpeg" alt="Blanket"></a>
         </div>
         <div class="box">
@@ -207,11 +209,15 @@ window.onclick = function(event) {
         event.preventDefault();
         // Trigger the button element with a click
         if (input.value == "jacket") {
-        document.getElementById("hidden-link").click();
+        document.getElementById("hiddenlink").click();
    
         }
-         if (input.value == "blanket") {
-        document.getElementById("hidden-link").click();
+        if (input.value == "blanket") {
+        document.getElementById("blanket").click();
+   
+        }
+         if (input.value == "cbd") {
+        document.getElementById("cbd").click();
    
         }
       }
@@ -233,13 +239,22 @@ function plusDivs(n) {
 function showDivs(n) {
   var i;
   var x = document.getElementsByClassName("mySlides");
- var b = document.getElementsByClassName("btn");
+ var btn = document.getElementById("shopBtn");
   if (n > x.length) {
     slideIndex = 1
     }
   if (n < 1) {slideIndex = x.length} ;
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
+  }
+
+
+
+  // check first if your image has a your button id
+  if (x[slideIndex-1].id == "showbutton") {
+    btn.style.display = "block";
+  } else {
+    btn.style.display = "none";
   }
 
   x[slideIndex-1].style.display = "block";
