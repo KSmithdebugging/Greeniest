@@ -230,8 +230,7 @@ li {
 .sub-eco-offer-container {
   width: 684px;
   height: 790px;
-  display: inline-block;
-  margin-left: 50px;
+  margin-left: 100px;
 }
 /* Our main eco offer container */
 .main-eco-offer-container {
@@ -246,12 +245,15 @@ li {
   height: 790px;
 }
 .sub-eco-offer {
-width: 80%;
-margin-bottom: 8px;
+display: inline-block;
+width: auto;
+height: 305px;
+margin-right: 15px;
 }
+
 .sub-eco-offer-2 {
 width: 600px;
-height: 320px;
+height: 479px;
 vertical-align: middle
 
 }
@@ -448,9 +450,8 @@ h1 > p {
 
 /* End of styling bar */
 
-/* Bottom nav bar container */
-.bottom-nav {
-  background-color: whitesmoke;
+.end-nav {
+  background: whitesmoke;
   width: 100%;
   height: 100px;
 
@@ -487,8 +488,7 @@ h1 > p {
 /* Bottom nav bar */
 .end-nav-buttons {
   display: inline-block;
- margin-right: 45px;
+}
 
-} 
 
 /* End */
