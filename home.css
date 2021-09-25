@@ -97,6 +97,9 @@ header {
   color: #4c8c5c;
   margin-bottom: 0;
 } 
+a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+}
 h3 {
     font-family: Moderne Sans, sans-serif;
     text-align: center;
@@ -318,7 +321,7 @@ margin: 0;
 #myBtn {
 margin: 0;
 color: #589bc6;
-display: none;
+/* display: none; */
 
 }
 
